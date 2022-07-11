@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Container } from 'react-bootstrap';
 import './App.css';
 // import { Button, Alert, Accordion, Badge } from "react-bootstrap";
-import Counter from "./components/Counter"
+// import Counter from "./components/Counter"
 import Register from "./components/Register"
 
 let App = () => {
@@ -14,7 +14,7 @@ let App = () => {
       </Container>
     </Navbar>
 
-    <Counter/>
+    {/* <Counter/> */}
     <Register/>
           
     </>
