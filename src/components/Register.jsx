@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Button, Card, Col, Container, Form, Row} from "react-bootstrap";
 
 let Register = () => {
+    
 
     let [state, setState] = useState( {
         user : {
@@ -23,7 +24,11 @@ let Register = () => {
 
     let register = (e) => {
         e.preventDefault();
-        console.log(state.user)
+        console.log('state.user.trim', state.user);
+        // let userPassword = state.user.password;
+        // userPassword = userPassword.trim();
+        // console.log('userPassword', userPassword)
+        
     };
 
 

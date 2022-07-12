@@ -3,7 +3,8 @@ import { Navbar, Container } from 'react-bootstrap';
 import './App.css';
 // import { Button, Alert, Accordion, Badge } from "react-bootstrap";
 // import Counter from "./components/Counter"
-import Register from "./components/Register"
+// import Register from "./components/Register"
+import UserTable from "./components/Usertable"
 
 let App = () => {
   return (
@@ -15,7 +16,8 @@ let App = () => {
     </Navbar>
 
     {/* <Counter/> */}
-    <Register/>
+    {/* <Register/> */}
+    <UserTable/>
           
     </>
   );
