@@ -5,6 +5,7 @@ import './App.css';
 // import Counter from "./components/Counter"
 // import Register from "./components/Register"
 import UserTable from "./components/Usertable"
+import Users from './components/Users'
 
 let App = () => {
   return (
@@ -18,7 +19,7 @@ let App = () => {
     {/* <Counter/> */}
     {/* <Register/> */}
     <UserTable/>
-          
+    <Users/>
     </>
   );
 }
