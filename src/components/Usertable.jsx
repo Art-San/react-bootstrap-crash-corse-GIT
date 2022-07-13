@@ -12,27 +12,26 @@ import {UserService} from "../services/UserService";
 
 let UserTable = () => {
    
-    let [state, setState] = useState({
-        users : []
+    let [state, setState] = useState( {
+       users: [] 
     });
 
-    useEffect( () => {
-        UserService.getAllUsers()
-                .then((response) => {
-                    setState({
-                        ...state,
-                        users: response.data
-                    })
-                })
-                .catch((error) => {
-                    console.log(error)
-                });
-    }, )
-
+    useEffect(() => {
+        UserService.getAllUsers().then((response) => {
+            setState({
+                ...state,
+                users: response.data
+            })
+        }).catch((error) => {
+            console.log(error);
+        });
+    }, [])
 
     return (
         <>
         <Container className="mt-3">
+        User Table
+        <pre>{JSON.stringify(state.users)}</pre>
             <Row>
                 <Col>
                 <h3 className='text-primary'>User list</h3>
@@ -58,12 +57,12 @@ let UserTable = () => {
                             state.users.map(user => {
                                 return (
                                     <tr key={user.id}>
-                                        <td>user.id</td>
-                                        <td>user.name</td>
-                                        <td>user.email</td>
-                                        <td>user.website</td>
-                                        <td>user.company.name</td>
-                                        <td>user.address.city</td>
+                                        <td>{user.id}</td>
+                                        <td>{user.name}</td>
+                                        <td>{user.email}</td>
+                                        <td>{user.website}</td>
+                                        <td>{user.company.name}</td>
+                                        <td>{user.address.city}</td>
                                         
                                     </tr>
                                 )
@@ -120,3 +119,23 @@ let UserTable = () => {
 
 export default UserTable;
  */
+
+/*
+ let [state, setState] = useState({
+        users : []
+    });
+
+    useEffect( () => {
+        UserService.getAllUsers()
+                .then((response) => {
+                    setState({
+                        ...state,
+                        users: response.data
+                    })
+                })
+                .catch((error) => {
+                    console.log(error)
+                });
+    }, )
+
+*/
