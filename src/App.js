@@ -6,6 +6,7 @@ import './App.css';
 // import Register from "./components/Register"
 import UserTable from "./components/Usertable"
 import Users from './components/Users'
+// import Test from './components/test'
 
 let App = () => {
   return (
@@ -20,6 +21,7 @@ let App = () => {
     {/* <Register/> */}
     <UserTable/>
     <Users/>
+    {/* <Test/> */}
     </>
   );
 }
