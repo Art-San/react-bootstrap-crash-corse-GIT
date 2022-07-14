@@ -11,7 +11,7 @@
 
 // import React, { useEffect, useState } from "react";
 
-// import React, {} from "react";
+import React, {} from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
 // import {API} from '../api/index'
 import api from '../api';
@@ -28,7 +28,7 @@ let Users = () => {
       <pre>{JSON.stringify(allUsers)}</pre>
           <Row>
               <Col>
-              <h3 className='text-primary'>12 человек тусанет с тобой сегодня</h3>
+              <h3 className='text-primary'>122 человек тусанет с тобой сегодня</h3>
               </Col>
           </Row>
           <Row>
