@@ -19,7 +19,9 @@ import api from '../api';
 
 let Users = () => {
     // console.log(api.users.fetchAll());
-   let allUsers = api.users.fetchAll()
+   let allUsers = api.users.fetchAll();
+   
+
 
    return (
       <>
@@ -28,7 +30,7 @@ let Users = () => {
       <pre>{JSON.stringify(allUsers)}</pre>
           <Row>
               <Col>
-              <h3 className='text-primary'>122 человек тусанет с тобой сегодня</h3>
+              <h3 className='text-primary'> Users 122 человек тусанет с тобой сегодня </h3>
               </Col>
           </Row>
           <Row>
@@ -57,6 +59,7 @@ let Users = () => {
                                       <td>{user.profession.name}</td>
                                       <td>{user.completedMeetings}</td>
                                       <td>{user.rate}</td>
+                                      <td><button>Delete</button></td>
                                       
                                   </tr>
                               )

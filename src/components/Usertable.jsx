@@ -25,7 +25,8 @@ let UserTable = () => {
         }).catch((error) => {
             console.log(error);
         });
-    }, [])
+    }, )   
+    // []  в оригенале стояли скобки
 
     return (
         <>

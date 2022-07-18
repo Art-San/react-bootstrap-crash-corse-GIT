@@ -129,3 +129,63 @@ const users = [
 export function fetchAll() {
     return users
 }
+
+
+
+
+
+
+// const all = [
+//         {
+//             id: "67rdca3eeb7f6fgeed471815",
+//             name: "Джон Дориан",
+//             profession: 'doctor',
+//             qualities: 'tedious',
+//             completedMeetings: 36,
+//             rate: 2.5,
+//             text: 'ghjjjj text',
+//             bookmark: false
+//         },
+//         {
+//             id: "67rdca3eeb7f6fgeed471816",
+//             name: "Кокс",
+//             profession: 'doctor',
+//             qualities: 'handsome',
+//             completedMeetings: 15,
+//             rate: 2.5,
+//             text: 'some text',
+//             bookmark: false
+//         },
+//         {
+//             id: "67rdca3eeb7f6fgeed471817",
+//             name: "Боб Келсо",
+//             profession: 'doctor',
+//             qualities: 'buller',
+//             completedMeetings: 247,
+//             rate: 3.5,
+//             text: 'some text',
+//             bookmark: false
+//         },
+//         {
+//             id: "67rdca3eeb7f6fgeed471818",
+//             name: "Рэйчел Грин",
+//             profession: 'waiter',
+//             qualities: 'uncertain',
+//             completedMeetings: 148,
+//             rate: 3.5,
+//             text: 'some text',
+//             bookmark: false
+//         },
+//         {
+//             id: "67rdca3eeb7f6fgeed471819",
+//             name: "Шелдон Купер",
+//             profession: 'physics',
+//             qualities: 'strange',
+//             completedMeetings: 37,
+//             rate: 4.6,
+//             text: 'some text',
+//             bookmark: false
+//         },
+//     ]
+
+
